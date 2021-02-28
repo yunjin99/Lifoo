@@ -1,4 +1,4 @@
-package com.example.lifoo_add;
+package com.example.lifoo;
 
 import android.content.Context;
 
