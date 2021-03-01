@@ -52,5 +52,6 @@ dependencies {
     // https://github.com/square/retrofit/tree/master/retrofit-converters/gson
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 
-
+    //bottomNavigationView
+    implementation 'com.android.support:design:29.0.0'
 }
