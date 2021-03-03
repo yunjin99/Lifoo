@@ -33,7 +33,7 @@
             android:textSize="18sp"
             android:textColor="@color/colorWhite"
             android:letterSpacing="-0.02"
-            android:text="라이푸에 오신 것을 환영합니다!" />
+            android:text="@string/social_login_welcome" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_marginTop="13dp"
             android:fontFamily="@font/proxima_nova_light"
             android:letterSpacing="-0.02"
-            android:text="LIFE IS FOOD !"
+            android:text="@string/social_login_welcome_eng"
             android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="italic" />
@@ -55,7 +55,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="29dp"
-            android:text="소셜 로그인을 통해 간편하게 회원가입하세요."
+            android:text="@string/social_login_welcome_info"
             android:textColor="@color/colorWhite" />
 
 
@@ -75,6 +75,14 @@
                 android:drawableLeft="@drawable/rectangle_76"
                 android:paddingLeft="22dp"
                 android:paddingBottom="5dp" />
+
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/login_btn_kakao_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft= "100dp"
+                android:visibility="invisible"/>
 
         </LinearLayout>
 
