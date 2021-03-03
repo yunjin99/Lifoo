@@ -16,11 +16,13 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApplicationClass  extends Application {
+
     public static MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=uft-8");
     public static MediaType MEDIA_TYPE_JPEG = MediaType.parse("image/jpeg");
 
     // 테스트 서버 주소
-    public static String BASE_URL = "15.165.187.87";
+    public static String BASE_URL = "http://lifoo.ga";
+
     // 실서버 주소
 //    public static String BASE_URL = "";
 
@@ -58,6 +60,7 @@ public class ApplicationClass  extends Application {
                     .connectTimeout(5000, TimeUnit.MILLISECONDS)
                     .addNetworkInterceptor(new XAccessTokenInterceptor()) // JWT 자동 헤더 전송
                     .build();
+
 
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)

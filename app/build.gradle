@@ -54,4 +54,8 @@ dependencies {
 
     //bottomNavigationView
     implementation 'com.android.support:design:29.0.0'
+
+    // kakao
+    implementation group: 'com.kakao.sdk', name: 'usermgmt', version: '1.30.0'
+
 }
