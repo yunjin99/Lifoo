@@ -73,6 +73,14 @@ public class KakaoApp extends Application {
     }
 
 
+    public static Context getContext(){
+        return instance;
+    }
+
+
+    public static KakaoApp getInstance() {
+        return instance;
+    }
     @Override
     public void onCreate() {
         super.onCreate();

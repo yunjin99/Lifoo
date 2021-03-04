@@ -14,8 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lifoo.BaseActivity;
 import com.example.lifoo.R;
-import com.example.lifoo.src.RegisterActivity.RegisterActivity;
+import com.example.lifoo.src.MainActivity.MainActivity;
+import com.example.lifoo.src.RegisterAgainActivity.RegisterAgainActivity;
 import com.example.lifoo.src.SocialLoginActivity.interfaces.SocialLoginActivityView;
+import com.example.lifoo.src.SocialLoginActivity.models.SocialLoginResponse;
 import com.kakao.auth.ApiErrorCode;
 import com.kakao.auth.ApprovalType;
 import com.kakao.auth.AuthType;
@@ -87,56 +89,57 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
 
         // TrySocialLogin 실패시 (신규 회원이거나, 유효하지 않는 토큰이거나 , 통신 자체가 안될때)
         Log.d("코드", String.valueOf(code));
-        Log.d("메세", message);
-
-
-        if(code == 3202)
-        {
-            // 신규
-            Intent intent = new Intent(SocialLoginActivity.this, RegisterActivity.class);
-            Toast.makeText(getApplicationContext(),"신규 회원 입니다. 회원 가입 페이지로 이동 합니다.", Toast.LENGTH_SHORT).show();
-            startActivity(intent);
-            finish();
-
-        }else if(code ==3203)
-        {
-            // 유효하지 않은 토큰
-            Toast.makeText(getApplicationContext(),"유효하지 않은 토큰값입니다.", Toast.LENGTH_SHORT).show();
-        }
+        Log.d("메세지", message);
 
 
     }
 
     @Override
-    public void SocialLogInSuccess(String jwt, String user_idx) {
-
-        Log.d("통신 성공", jwt + " and " + user_idx);
-        // 소셜 로그인이 성공 한 부분.(유효한 토큰을 가지고 있는 유저임)
+    public void SocialLogInSuccess(SocialLoginResponse socialLoginResponse, String message, int code) {
 
         hideProgressDialog();
 
-        sSharedPreferences = getSharedPreferences(TAG,MODE_PRIVATE);
-        SharedPreferences.Editor editor = sSharedPreferences.edit();
 
-        // 내부에 저장 되어 있는 jwt 값을 지움
-        editor.remove(X_ACCESS_TOKEN);
-        editor.commit();
+        if(code == 2000)
+        {
+            // 이미 가입되 있는 사람.
 
-        sSharedPreferences = getSharedPreferences(TAG,MODE_PRIVATE);
-        SharedPreferences.Editor editor2 = sSharedPreferences.edit();
+            Log.d("통신 성공", socialLoginResponse.getResult().getJwt() + " and " + socialLoginResponse.getResult().getUserIdx());
+            // 소셜 로그인이 성공 한 부분.(유효한 토큰을 가지고 있는 유저임)
 
-        // 소셜 로그인을 통해 jwt 값을 채
-        editor2.putString(X_ACCESS_TOKEN,jwt);
-        editor2.commit();
+            sSharedPreferences = getSharedPreferences(TAG,MODE_PRIVATE);
+            SharedPreferences.Editor editor = sSharedPreferences.edit();
+            // 내부에 저장 되어 있는 jwt 값을 지움
+            editor.remove(X_ACCESS_TOKEN);
+            editor.commit();
 
-        String x_access = sSharedPreferences.getString(X_ACCESS_TOKEN,null);
-        editor.putString("user_idx",user_idx);
-        Log.d("",x_access+"and"+"user_idx");
+            SharedPreferences.Editor editor2 = sSharedPreferences.edit();
+            // 소셜 로그인을 통해 jwt 값을
+            editor2.putString(X_ACCESS_TOKEN,socialLoginResponse.getResult().getJwt());
+            editor2.putString("user_id",socialLoginResponse.getResult().getUserIdx());
+            editor2.commit();
 
+            String x_access = sSharedPreferences.getString(X_ACCESS_TOKEN,null);
 
-        Intent intent = new Intent(SocialLoginActivity.this, RegisterActivity.class);
-        startActivity(intent);
-        finish();
+            Log.d("소셜 로그인 jwt, idx: ",x_access + "하" + socialLoginResponse.getResult().getUserIdx());
+
+            Intent intent = new Intent(SocialLoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+
+        }else if(code == 3202) {
+            // 신규
+
+            Intent intent = new Intent(SocialLoginActivity.this, RegisterAgainActivity.class);
+            Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
+            startActivity(intent);
+            finish();
+
+        }else if(code ==3203 || code == 3016) {
+            // 유효하지 않은 토큰
+            Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 
@@ -197,8 +200,8 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
 
                     sSharedPreferences = getSharedPreferences(TAG,MODE_PRIVATE);
                     SharedPreferences.Editor editor2 = sSharedPreferences.edit();
-                    editor.remove("user_idx");
-                    editor.putString("user_idx",String.valueOf(user_id));
+                    editor2.remove("user_id");
+                    editor2.putString("user_id",String.valueOf(user_id));
                     editor.commit();
 
 

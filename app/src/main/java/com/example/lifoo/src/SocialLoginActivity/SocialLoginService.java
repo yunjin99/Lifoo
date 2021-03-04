@@ -33,11 +33,11 @@ public class SocialLoginService {
 
                 if (socialLoginResponse == null) {
                     // 통신은 됬는데 결과 값이 null 이면?
-                    socialLoginActivityView.SocialLoginFailure(socialLoginResponse.getMessage(), socialLoginResponse.getCode());
+                    socialLoginActivityView.SocialLoginFailure("null", 0);
                     return;
                 }
                 // 통신도 성공! 받아오는 값도 성공!
-                socialLoginActivityView.SocialLogInSuccess(socialLoginResponse.getResult().getJwt(),socialLoginResponse.getResult().getUserIdx());
+                socialLoginActivityView.SocialLogInSuccess(socialLoginResponse,socialLoginResponse.getMessage(),socialLoginResponse.getCode());
             }
 
             // API 통신 자체가 실패
