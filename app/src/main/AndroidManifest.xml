@@ -18,17 +18,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".src.SplashActivity.SplashActivity">
-
-        </activity>
-        <activity android:name=".src.MainActivity.MainActivity"/>
-        <activity android:name=".src.RegisterActivity.RegisterActivity"/>
-        <activity android:name=".src.RegisterAgainActivity.RegisterAgainActivity"/>
-        <activity android:name=".src.SocialLoginActivity.SocialLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".src.MainActivity.MainActivity"/>
+        <activity android:name=".src.RegisterAgainActivity.RegisterAgainActivity">
+        </activity>
+        <activity android:name=".src.SocialLoginActivity.SocialLoginActivity">
         </activity>
 
         <meta-data

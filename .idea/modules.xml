@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Lifoo_jy.iml" filepath="$PROJECT_DIR$/.idea/Lifoo_jy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lifoo_add.iml" filepath="$PROJECT_DIR$/.idea/modules/lifoo_add.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/lifoo_add.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/lifoo_add.app.iml" />
     </modules>
   </component>
 </project>
