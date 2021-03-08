@@ -16,11 +16,13 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApplicationClass  extends Application {
+
     public static MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=uft-8");
     public static MediaType MEDIA_TYPE_JPEG = MediaType.parse("image/jpeg");
 
     // 테스트 서버 주소
-    public static String BASE_URL = "15.165.187.87";
+    public static String BASE_URL = "http://lifoo.ga";
+
     // 실서버 주소
 //    public static String BASE_URL = "";
 
@@ -46,7 +48,12 @@ public class ApplicationClass  extends Application {
         super.onCreate();
 
         if (sSharedPreferences == null) {
-            sSharedPreferences = getApplicationContext().getSharedPreferences(TAG, Context.MODE_PRIVATE);
+
+            sSharedPreferences = getSharedPreferences(TAG, MODE_PRIVATE);
+
+            SharedPreferences.Editor editor= sSharedPreferences.edit(); //sharedPreferences를 제어할 editor를 선언
+            editor.putString("temp_temp","temp_temp"); // key,value 형식으로 저장
+            editor.commit();    //최종 커밋. 커밋을 해야 저장이 된다.
         }
     }
 
@@ -58,6 +65,7 @@ public class ApplicationClass  extends Application {
                     .connectTimeout(5000, TimeUnit.MILLISECONDS)
                     .addNetworkInterceptor(new XAccessTokenInterceptor()) // JWT 자동 헤더 전송
                     .build();
+
 
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)

@@ -2,21 +2,75 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="Nexus 5X" />
+        <device id="pixel_3" />
+        <device id="Nexus 6P" />
+      </config>
     </shared>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cbaa50f-9e38-4a0d-a18c-f0d2ba71210a" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/interfaces/RegisterActivityView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/interfaces/RegisterRetrofitInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/GetNicknameResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/RegisterBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/RegisterResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/interfaces/SplashActivityView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/interfaces/SplashRetrofitInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/models/Splash_AutoLogin_Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a_temp_splash_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/lottie_work.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/ApplicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/ApplicationClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/config/XAccessTokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/config/XAccessTokenInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterActivity/RegisterActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterAgainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterAgainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/KakaoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/KakaoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/interfaces/SocialLoginActivityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/interfaces/SocialLoginActivityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_again.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_again.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_social_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_social_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+>>>>>>> 163bd29268657a0d5ce2745f210838e70f7425e6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[5200ba3bfed85437]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -32,6 +86,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,18 +108,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lifoo3" />
+=======
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1614761490043" />
+>>>>>>> 163bd29268657a0d5ce2745f210838e70f7425e6
   </component>
   <component name="RecentsManager">
-    <key name="android.template.packageName">
-      <recent name="com.example.lifoo.src.SplashActivity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yunji\OneDrive\MakeUs\Lifoo\app\src\main\res\drawable-xxxhdpi" />
       <recent name="C:\Users\yunji\OneDrive\MakeUs\Lifoo\app\src\main\res\drawable-xxhdpi" />
       <recent name="C:\Users\yunji\OneDrive\MakeUs\Lifoo\app\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\yunji\OneDrive\MakeUs\Lifoo\app\src\main\res\drawable-mdpi" />
       <recent name="C:\Users\yunji\OneDrive\MakeUs\Lifoo\app\src\main\res\drawable-hdpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.lifoo" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.example.lifoo.src.SplashActivity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
     </key>
   </component>
   <component name="RunManager">
@@ -158,33 +226,96 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1614612837794">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="425" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614835208335">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state x="425" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614835208335" />
+    <state x="538" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1614857417504">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1614612837794" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1614600558713">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="538" y="141" key="#com.intellij.ide.util.MemberChooser/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614839345434" />
+    <state x="538" y="141" key="#com.intellij.ide.util.MemberChooser/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614857417504" />
+    <state x="484" y="299" width="471" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614849798224">
+      <screen x="0" y="25" width="1440" height="817" />
+    </state>
+    <state x="484" y="299" width="471" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614849798224" />
+    <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614852790611">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614836152599" />
+    <state x="458" y="183" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614852790611" />
+    <state x="308" y="192" key="AndroidCreateResourceDirectoryDialog" timestamp="1614835765519">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state x="308" y="192" key="AndroidCreateResourceDirectoryDialog/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614835765519" />
+    <state x="327" y="191" key="AndroidCreateResourceFileDialog" timestamp="1614782691643">
+      <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1614600558713" />
+<<<<<<< HEAD
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614779628861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614779628861" />
     <state width="1491" height="252" key="GridCell.Tab.0.bottom" timestamp="1614613541315">
       <screen x="0" y="0" width="1536" height="824" />
+=======
+    <state x="327" y="191" key="AndroidCreateResourceFileDialog/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614782691643" />
+    <state x="542" y="218" key="AndroidCreateXmlResourceDialog" timestamp="1614862714040">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="542" y="218" key="AndroidCreateXmlResourceDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1614862714040" />
+    <state x="542" y="223" key="AndroidCreateXmlResourceDialog/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614768815130" />
+    <state x="542" y="223" key="AndroidCreateXmlResourceDialog/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614853715350" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614600851734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614600851734" />
+    <state width="1396" height="442" key="GridCell.Tab.0.bottom" timestamp="1614866270028">
+      <screen x="0" y="0" width="1440" height="900" />
+>>>>>>> 163bd29268657a0d5ce2745f210838e70f7425e6
+    </state>
+    <state width="1396" height="442" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1614866270028" />
     <state width="1491" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614613541315" />
-    <state width="1491" height="252" key="GridCell.Tab.0.center" timestamp="1614613541315">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1396" height="492" key="GridCell.Tab.0.bottom/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614850063211" />
+    <state width="1396" height="20" key="GridCell.Tab.0.bottom/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614852171702" />
+    <state width="1396" height="46" key="GridCell.Tab.0.bottom/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614851960463" />
+    <state width="1396" height="157" key="GridCell.Tab.0.bottom/0.25.1440.820/1440.25.1920.1055@0.25.1440.820" timestamp="1614848123338" />
+    <state width="1396" height="83" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1614848093370" />
+    <state width="1396" height="442" key="GridCell.Tab.0.center" timestamp="1614866270028">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="442" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1614866270028" />
     <state width="1491" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614613541315" />
-    <state width="1491" height="252" key="GridCell.Tab.0.left" timestamp="1614613541315">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1396" height="492" key="GridCell.Tab.0.center/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614850063211" />
+    <state width="1396" height="20" key="GridCell.Tab.0.center/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614852171702" />
+    <state width="1396" height="46" key="GridCell.Tab.0.center/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614851960463" />
+    <state width="1396" height="157" key="GridCell.Tab.0.center/0.25.1440.820/1440.25.1920.1055@0.25.1440.820" timestamp="1614848123337" />
+    <state width="1396" height="83" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1614848093370" />
+    <state width="1396" height="442" key="GridCell.Tab.0.left" timestamp="1614866270026">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="442" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1614866270026" />
     <state width="1491" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614613541315" />
-    <state width="1491" height="252" key="GridCell.Tab.0.right" timestamp="1614613541315">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1396" height="492" key="GridCell.Tab.0.left/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614850063210" />
+    <state width="1396" height="20" key="GridCell.Tab.0.left/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614852171702" />
+    <state width="1396" height="46" key="GridCell.Tab.0.left/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614851960463" />
+    <state width="1396" height="157" key="GridCell.Tab.0.left/0.25.1440.820/1440.25.1920.1055@0.25.1440.820" timestamp="1614848123337" />
+    <state width="1396" height="83" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1614848093369" />
+    <state width="1396" height="442" key="GridCell.Tab.0.right" timestamp="1614866270028">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="442" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1614866270028" />
     <state width="1491" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614613541315" />
+    <state width="1396" height="492" key="GridCell.Tab.0.right/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614850063211" />
+    <state width="1396" height="20" key="GridCell.Tab.0.right/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1614852171702" />
+    <state width="1396" height="46" key="GridCell.Tab.0.right/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614851960463" />
+    <state width="1396" height="157" key="GridCell.Tab.0.right/0.25.1440.820/1440.25.1920.1055@0.25.1440.820" timestamp="1614848123337" />
+    <state width="1396" height="83" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1614848093370" />
+    <state x="500" y="208" key="chooseDestDirectoryDialog" timestamp="1614849711759">
+      <screen x="0" y="25" width="1440" height="817" />
+    </state>
+    <state x="500" y="208" key="chooseDestDirectoryDialog/0.25.1440.817/1440.25.1920.1055@0.25.1440.817" timestamp="1614849711759" />
   </component>
 </project>
