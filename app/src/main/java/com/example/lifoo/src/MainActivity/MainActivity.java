@@ -8,6 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.lifoo.R;
+import com.example.lifoo.src.AlertFragment.AlertFragment;
+import com.example.lifoo.src.FeedFragment.FeedFragment;
+import com.example.lifoo.src.MypageFragment.MypageFragment;
+import com.example.lifoo.src.RankingFragment.RankingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,10 +19,21 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigation;
     Menu menu;
 
+
+    AlertFragment alertFragment;
+    FeedFragment feedFragment;
+    MypageFragment mypageFragment;
+    RankingFragment rankingFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        alertFragment = new AlertFragment();
+        feedFragment = new FeedFragment();
+        mypageFragment = new MypageFragment();
+        rankingFragment = new RankingFragment();
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
         menu = bottomNavigation.getMenu();
@@ -36,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     menu.findItem(R.id.ranking).setIcon(R.drawable.icon_crown);
                     menu.findItem(R.id.alarm).setIcon(R.drawable.icon_alarm);
                     menu.findItem(R.id.user).setIcon(R.drawable.icon_user);
+
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.bottom_navigation_fl, feedFragment).commitAllowingStateLoss();
                     break;
 
                 case R.id.ranking:
@@ -43,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     menu.findItem(R.id.home).setIcon(R.drawable.icon_home);
                     menu.findItem(R.id.alarm).setIcon(R.drawable.icon_alarm);
                     menu.findItem(R.id.user).setIcon(R.drawable.icon_user);
+
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.bottom_navigation_fl, rankingFragment).commitAllowingStateLoss();
                     break;
 
                 case R.id.alarm:
@@ -50,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
                     menu.findItem(R.id.home).setIcon(R.drawable.icon_home);
                     menu.findItem(R.id.ranking).setIcon(R.drawable.icon_crown);
                     menu.findItem(R.id.user).setIcon(R.drawable.icon_user);
+
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.bottom_navigation_fl, alertFragment).commitAllowingStateLoss();
                     break;
 
                 case R.id.user:
@@ -57,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                     menu.findItem(R.id.home).setIcon(R.drawable.icon_home);
                     menu.findItem(R.id.ranking).setIcon(R.drawable.icon_crown);
                     menu.findItem(R.id.alarm).setIcon(R.drawable.icon_alarm);
+
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.bottom_navigation_fl, mypageFragment).commitAllowingStateLoss();
                     break;
             }
             return true;
