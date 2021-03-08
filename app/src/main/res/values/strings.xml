@@ -14,6 +14,7 @@
     <string name="register_info_2">닉네임을 직접 입력하고 싶으시다면\n마이페이지에서 수정 가능합니다.</string>
     <string name="register_btn_txt">가입 완료</string>
     <string name="splash_info">세상의 모든 음식이 한 곳에</string>
+    <string name="alert_title">알림</string>
 
 
 </resources>

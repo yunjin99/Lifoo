@@ -129,6 +129,21 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
 
         }else if(code == 3202) {
             // 신규
+            sSharedPreferences = getSharedPreferences(TAG,MODE_PRIVATE);
+            SharedPreferences.Editor editor = sSharedPreferences.edit();
+            // 내부에 저장 되어 있는 jwt 값을 지움
+            editor.remove(X_ACCESS_TOKEN);
+            editor.commit();
+
+            SharedPreferences.Editor editor2 = sSharedPreferences.edit();
+            // 소셜 로그인을 통해 jwt 값을
+            editor2.putString(X_ACCESS_TOKEN,socialLoginResponse.getResult().getJwt());
+            editor2.putString("user_id",socialLoginResponse.getResult().getUserIdx());
+            editor2.commit();
+
+            String x_access = sSharedPreferences.getString(X_ACCESS_TOKEN,null);
+
+            Log.d("소셜 로그인 jwt, idx: ",x_access + "하" + socialLoginResponse.getResult().getUserIdx());
 
             Intent intent = new Intent(SocialLoginActivity.this, RegisterAgainActivity.class);
             Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
