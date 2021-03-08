@@ -29,42 +29,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cbaa50f-9e38-4a0d-a18c-f0d2ba71210a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/interfaces/RegisterActivityView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/interfaces/RegisterRetrofitInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/GetNicknameResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/RegisterBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/models/RegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/interfaces/SplashActivityView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/interfaces/SplashRetrofitInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/models/Splash_AutoLogin_Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a_temp_splash_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/lottie_work.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/AlertFragment/AlertFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/FeedFragment/FeedFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/MypageFragment/MypageFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RankingFragment/RankingFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_alert.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mypage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ranking.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/ApplicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/ApplicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/config/XAccessTokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/config/XAccessTokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterActivity/RegisterActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterAgainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/RegisterAgainActivity/RegisterAgainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/KakaoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/KakaoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/SocialLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/interfaces/SocialLoginActivityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SocialLoginActivity/interfaces/SocialLoginActivityView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/SplashActivity/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_again.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_again.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_social_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_social_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/MainActivity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lifoo/src/MainActivity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/lottie_work.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[5200ba3bfed85437]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -82,6 +65,7 @@
       <list>
         <option value="resourceFile" />
         <option value="Interface" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -216,6 +200,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="458" y="192" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1615166134130">
+      <screen x="0" y="25" width="1440" height="818" />
+    </state>
+    <state x="458" y="192" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1615166134130" />
     <state x="425" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614835208335">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
@@ -239,10 +227,11 @@
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state x="308" y="192" key="AndroidCreateResourceDirectoryDialog/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614835765519" />
-    <state x="327" y="191" key="AndroidCreateResourceFileDialog" timestamp="1614782691643">
-      <screen x="0" y="25" width="1440" height="819" />
+    <state x="327" y="191" key="AndroidCreateResourceFileDialog" timestamp="1615165833104">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1614600558713" />
+    <state x="327" y="191" key="AndroidCreateResourceFileDialog/0.25.1440.818/1440.25.1920.1055@0.25.1440.818" timestamp="1615165833104" />
     <state x="327" y="191" key="AndroidCreateResourceFileDialog/0.25.1440.819/1440.25.1920.1055@0.25.1440.819" timestamp="1614782691643" />
     <state x="542" y="218" key="AndroidCreateXmlResourceDialog" timestamp="1614862714040">
       <screen x="0" y="0" width="1440" height="900" />
