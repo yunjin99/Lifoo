@@ -18,4 +18,11 @@
 
     </style>
 
+    <style name="Title">
+        <item name="android:fontFamily">@font/noto_sans_cjkkr</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
 </resources>
