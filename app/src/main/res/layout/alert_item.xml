@@ -6,7 +6,7 @@
     android:background="@color/colorWhite"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <com.example.lifoo.src.xmlClass.RoundImageView
         android:id="@+id/alert_item_iv"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
