@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lifoo.R;
+import com.example.lifoo.src.xmlClass.RoundImageView;
 
 import java.util.ArrayList;
 
@@ -44,7 +45,7 @@ public class AlertAdapter extends RecyclerView.Adapter<AlertAdapter.AlertViewHol
 
     public class AlertViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView Alert_img;
+        RoundImageView Alert_img;
         TextView Alert_txt;
         TextView Alert_time;
 
@@ -53,6 +54,7 @@ public class AlertAdapter extends RecyclerView.Adapter<AlertAdapter.AlertViewHol
             super(itemView);
 
             this.Alert_img = itemView.findViewById(R.id.alert_item_iv);
+            Alert_img.setRectRadius(15f);
             this.Alert_txt = itemView.findViewById(R.id.alert_item_tv_reaction_nick_name);
             this.Alert_time = itemView.findViewById(R.id.alert_item_tv_time);
 

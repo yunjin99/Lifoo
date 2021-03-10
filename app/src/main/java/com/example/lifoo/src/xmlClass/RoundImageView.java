@@ -1,18 +1,15 @@
 package com.example.lifoo.src.xmlClass;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
-@SuppressLint("AppCompatCustomView")
-public class RoundImageView extends ImageView {
+public class RoundImageView extends androidx.appcompat.widget.AppCompatImageView {
 
     // 라운드처리 강도 값을 크게하면 라운드 범위가 커짐
-    public static float radius = 10.0f;
+    public static float radius = 15.0f;
 
     public RoundImageView(Context context) {
         super(context);

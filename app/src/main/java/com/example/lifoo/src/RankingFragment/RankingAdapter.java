@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.lifoo.R;
 import com.example.lifoo.src.AlertFragment.AlertAdapter;
 import com.example.lifoo.src.PostDetailActivity;
+import com.example.lifoo.src.xmlClass.RoundImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,7 +68,7 @@ public class RankingAdapter extends RecyclerView.Adapter<RankingAdapter.RankingV
     }
 
     public class RankingViewHolder extends RecyclerView.ViewHolder {
-        ImageView rankingImage;
+        RoundImageView rankingImage;
         ImageView badgeImage;
         TextView rankingPostTitle;
         TextView rankingPostTime;
@@ -76,6 +77,7 @@ public class RankingAdapter extends RecyclerView.Adapter<RankingAdapter.RankingV
         public RankingViewHolder(final View itemView) {
             super(itemView);
             this.rankingImage = itemView.findViewById(R.id.ranking_post_image);
+            rankingImage.setRectRadius(15f);
             this.badgeImage = itemView.findViewById(R.id.ranking_post_badge);
             this.rankingPostTitle = itemView.findViewById(R.id.ranking_post_title);
             this.rankingPostTime = itemView.findViewById(R.id.ranking_post_time);
