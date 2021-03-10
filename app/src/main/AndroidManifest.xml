@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".src.PostDetailActivity.PostDetailActivity"></activity>
         <activity android:name=".src.SplashActivity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,16 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".src.MainActivity.MainActivity"/>
-        <activity android:name=".src.RegisterAgainActivity.RegisterAgainActivity">
-        </activity>
-        <activity android:name=".src.SocialLoginActivity.SocialLoginActivity">
-        </activity>
+        <activity android:name=".src.MainActivity.MainActivity"></activity>
+        <activity android:name=".src.RegisterAgainActivity.RegisterAgainActivity"></activity>
+        <activity android:name=".src.SocialLoginActivity.SocialLoginActivity"></activity>
+        <activity android:name=".src.CreateNewPostActivity.CreateNewPostActivity"></activity>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
-
     </application>
 
 </manifest>

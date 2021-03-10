@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.lifoo.R;
 import com.example.lifoo.src.AlertFragment.AlertFragment;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
     Menu menu;
+    ImageView plus_btn;
 
 
     AlertFragment alertFragment;
@@ -40,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigation.setOnNavigationItemSelectedListener(new ItemSelectedListener());
         bottomNavigation.setSelectedItemId(R.id.home);
+
+        plus_btn = findViewById(R.id.bottom_navigation_iv_plus);
+
+        plus_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 사진 올리기
+            }
+        });
     }
     class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener{
         @Override

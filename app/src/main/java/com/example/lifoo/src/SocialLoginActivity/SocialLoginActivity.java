@@ -63,6 +63,7 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 kakao_login_btn_invisible.callOnClick();
 
                 Session.getCurrentSession().addCallback(kakaoCallback);
@@ -87,7 +88,6 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
 
         // 통신이 실패 하지 않는 이상 이 구간은 없을 수 있음.
 
-        // TrySocialLogin 실패시 (신규 회원이거나, 유효하지 않는 토큰이거나 , 통신 자체가 안될때)
         Log.d("코드", String.valueOf(code));
         Log.d("메세지", message);
 
@@ -102,7 +102,7 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
 
         if(code == 2000)
         {
-            // 이미 가입되 있는 사람.
+            // 이미 가입되 있는 사람. jwt 재발급 됨.
 
             Log.d("통신 성공", socialLoginResponse.getResult().getJwt() + " and " + socialLoginResponse.getResult().getUserIdx());
             // 소셜 로그인이 성공 한 부분.(유효한 토큰을 가지고 있는 유저임)
@@ -116,7 +116,7 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
             SharedPreferences.Editor editor2 = sSharedPreferences.edit();
             // 소셜 로그인을 통해 jwt 값을
             editor2.putString(X_ACCESS_TOKEN,socialLoginResponse.getResult().getJwt());
-            editor2.putString("user_id",socialLoginResponse.getResult().getUserIdx());
+            editor2.putString("user_idx",socialLoginResponse.getResult().getUserIdx());
             editor2.commit();
 
             String x_access = sSharedPreferences.getString(X_ACCESS_TOKEN,null);
@@ -135,15 +135,15 @@ public class SocialLoginActivity extends BaseActivity implements SocialLoginActi
             editor.remove(X_ACCESS_TOKEN);
             editor.commit();
 
-            SharedPreferences.Editor editor2 = sSharedPreferences.edit();
+            // SharedPreferences.Editor editor2 = sSharedPreferences.edit();
             // 소셜 로그인을 통해 jwt 값을
-            editor2.putString(X_ACCESS_TOKEN,socialLoginResponse.getResult().getJwt());
-            editor2.putString("user_id",socialLoginResponse.getResult().getUserIdx());
-            editor2.commit();
+            // editor2.putString(X_ACCESS_TOKEN,socialLoginResponse.getResult().getJwt());
+            // editor2.putString("user_idx",socialLoginResponse.getResult().getUserIdx());
+            // editor2.commit();
 
             String x_access = sSharedPreferences.getString(X_ACCESS_TOKEN,null);
 
-            Log.d("소셜 로그인 jwt, idx: ",x_access + "하" + socialLoginResponse.getResult().getUserIdx());
+            // Log.d("소셜 로그인 jwt, idx: ",x_access + "하" + socialLoginResponse.getResult().getUserIdx());
 
             Intent intent = new Intent(SocialLoginActivity.this, RegisterAgainActivity.class);
             Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();

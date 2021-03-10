@@ -47,10 +47,6 @@ public class SplashActivity extends BaseActivity implements SplashActivityView {
             @Override
             public void run() {
 
-                // Lottie Animation
-//                LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.splash_lottie);
-//                animationView.playAnimation();
-
                 //  jwt 정보 확인하여
                 TryAutoLogin();
             }
@@ -74,7 +70,7 @@ public class SplashActivity extends BaseActivity implements SplashActivityView {
         String jwtToken = sSharedPreferences.getString(X_ACCESS_TOKEN, "null token");
 
         Log.d("자동 로그인 jwt 토큰 ", jwtToken);
-        Log.d("자동 로그인 통신 메세지 ",message);
+        Log.d("자동 로그인 통신 메세지 ", message);
 
         Intent intent = new Intent(SplashActivity.this, SocialLoginActivity.class);
         startActivity(intent);

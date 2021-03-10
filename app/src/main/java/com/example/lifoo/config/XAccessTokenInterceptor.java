@@ -28,7 +28,7 @@ public class XAccessTokenInterceptor implements Interceptor {
         final Request.Builder builder = chain.request().newBuilder();
 
         sSharedPreferences = PreferenceManager.getDefaultSharedPreferences(KakaoApp.getContext());
-        final String jwtToken = sSharedPreferences.getString(X_ACCESS_TOKEN, "null token");
+        String jwtToken = sSharedPreferences.getString(X_ACCESS_TOKEN, "null token");
 
 
         if (jwtToken != null) {

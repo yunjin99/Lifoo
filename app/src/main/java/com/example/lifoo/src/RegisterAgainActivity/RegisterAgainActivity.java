@@ -224,6 +224,13 @@ public class RegisterAgainActivity extends BaseActivity implements RegisterActiv
                 startActivity(intent_0);
                 finish();
 
+            case 3104:
+                // 이미 가입된 sns_ID 회원
+                Toast.makeText(getApplicationContext(), message , Toast.LENGTH_SHORT).show();
+                Intent intent_1 = new Intent(RegisterAgainActivity.this, SocialLoginActivity.class);
+                startActivity(intent_1);
+                finish();
+
 
         }
     }
