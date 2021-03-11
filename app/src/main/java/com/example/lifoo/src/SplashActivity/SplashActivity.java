@@ -40,24 +40,8 @@ public class SplashActivity extends BaseActivity implements SplashActivityView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-
-        // 5초 후에 화면이 변함함
-        Handler hand = new Handler();
-        hand.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                // Lottie Animation
-//                LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.splash_lottie);
-//                animationView.playAnimation();
-
-                //  jwt 정보 확인하여
-                TryAutoLogin();
-            }
-        },2500);
-
-
-
+        //  jwt 정보 확인하여
+        TryAutoLogin();
     }
 
 
@@ -74,7 +58,7 @@ public class SplashActivity extends BaseActivity implements SplashActivityView {
         String jwtToken = sSharedPreferences.getString(X_ACCESS_TOKEN, "null token");
 
         Log.d("자동 로그인 jwt 토큰 ", jwtToken);
-        Log.d("자동 로그인 통신 메세지 ",message);
+        Log.d("자동 로그인 통신 메세지 ", message);
 
         Intent intent = new Intent(SplashActivity.this, SocialLoginActivity.class);
         startActivity(intent);
@@ -84,35 +68,38 @@ public class SplashActivity extends BaseActivity implements SplashActivityView {
     @Override
     public void AutoLogInSuccess(String message, int code) {
 
-        switch(code)
+        if(code == 2000)
         {
-            case 2000:
-                // 요청 성공
-                Toast.makeText(getApplicationContext(),"자동 로그인 입니다", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            case 3000:
-                //jwt 입력해 주세요
-                Intent intent0 = new Intent(SplashActivity.this, SocialLoginActivity.class);
-                startActivity(intent0);
-                finish();
+            // 요청 성공
+            Log.d("자동로그인","성공");
+            Toast.makeText(getApplicationContext(),"자동 로그인 입니다", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        } else if(code == 3000){
+            //jwt 입력해 주세요
+            Log.d("자동로그인","jwt 없음");
+            Intent intent0 = new Intent(SplashActivity.this, SocialLoginActivity.class);
+            startActivity(intent0);
+            finish();
+        }else if(code == 3200){
+            Log.d("자동로그인","jwt 유효 x");
+            sSharedPreferences = getSharedPreferences(TAG, MODE_PRIVATE);
+            String jwtToken = sSharedPreferences.getString(X_ACCESS_TOKEN, "null token");
 
-            case 3200:
-                // 유효하지 않은 jwt
-                Intent intent1 = new Intent(SplashActivity.this, SocialLoginActivity.class);
-                startActivity(intent1);
-                finish();
-
-            case 3201:
-                // 존재하지 않는 회원
-                Intent intent2 = new Intent(SplashActivity.this, SocialLoginActivity.class);
-                startActivity(intent2);
-                finish();
+            Log.d("자동 로그인 jwt 토큰 ", jwtToken);
+            // 유효하지 않은 jwt
+            Intent intent1 = new Intent(SplashActivity.this, SocialLoginActivity.class);
+            startActivity(intent1);
+            finish();
+        }else if(code == 3201){
+            // 존재하지 않는 회원함
+            Log.d("자동로그인","존재 안");
+            Intent intent2 = new Intent(SplashActivity.this, SocialLoginActivity.class);
+            startActivity(intent2);
+            finish();
 
         }
-
-
 
     }
 

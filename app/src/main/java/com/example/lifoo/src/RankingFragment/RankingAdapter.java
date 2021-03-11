@@ -1,11 +1,7 @@
 package com.example.lifoo.src.RankingFragment;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,16 +9,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lifoo.R;
 import com.example.lifoo.src.AlertFragment.AlertAdapter;
-import com.example.lifoo.src.PostDetailActivity;
+import com.example.lifoo.src.PostDetailActivity.PostDetailActivity;
 import com.example.lifoo.src.xmlClass.RoundImageView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RankingAdapter extends RecyclerView.Adapter<RankingAdapter.RankingViewHolder> {
     Context context;

@@ -2,6 +2,7 @@ package com.example.lifoo.src.SocialLoginActivity;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import androidx.annotation.Nullable;
 
@@ -11,6 +12,9 @@ import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 import com.kakao.auth.KakaoSDK;
+
+import static com.example.lifoo.ApplicationClass.TAG;
+import static com.example.lifoo.ApplicationClass.sSharedPreferences;
 
 public class KakaoApp extends Application {
 
@@ -73,9 +77,10 @@ public class KakaoApp extends Application {
     }
 
 
-    public static Context getContext(){
-        return instance;
-    }
+//    public static Context getContext(){
+//        return instance;
+//    }
+
 
 
     public static KakaoApp getInstance() {

@@ -25,6 +25,7 @@
     <string name="post_delete_dialog_1">한번 삭제한 게시물은 복구가 불가합니다.\n정말 삭제하시겠습니까?</string>
     <string name="back">취소</string>
     <string name="delete">삭제</string>
+    <string name="post_declartion_dialog_1">한번 신고하시면 취소가 불가능합니다.\n정말 신고하시겠습니까?</string>
 
 
 </resources>

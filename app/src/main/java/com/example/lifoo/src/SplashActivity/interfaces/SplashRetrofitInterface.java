@@ -13,7 +13,7 @@ import retrofit2.http.Path;
 public interface SplashRetrofitInterface {
 
     // 자동 로그
-    @GET("/login/{jwt}")
+    @GET("/login/jwt")
     Call<Splash_AutoLogin_Response> Auto_Login_Test ();
 
 }
