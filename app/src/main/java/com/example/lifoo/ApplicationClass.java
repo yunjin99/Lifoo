@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -64,7 +65,7 @@ public class ApplicationClass  extends Application {
             OkHttpClient client = new OkHttpClient.Builder()
                     .readTimeout(5000, TimeUnit.MILLISECONDS)
                     .connectTimeout(5000, TimeUnit.MILLISECONDS)
-                    .addNetworkInterceptor(new XAccessTokenInterceptor()) // JWT 자동 헤더 전송
+                    .addNetworkInterceptor((Interceptor) new XAccessTokenInterceptor()) // JWT 자동 헤더 전송
                     .build();
 
 

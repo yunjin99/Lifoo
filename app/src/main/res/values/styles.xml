@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -22,7 +22,7 @@
         <item name="android:fontFamily">@font/noto_sans_cjkkr</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">13sp</item>
-        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">-0.02</item>
     </style>
 
 </resources>
